@@ -1,0 +1,22 @@
+---
+title: "Tarea 5. pm"
+author: "Diego Alfonso Valencia Flores"
+date: "5/21/2022"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+pacman::p_load(tidyverse, ggplot2, readr, dplyr)
+```
+
+# Ejercicio 2. 
+**Estudie la inflación y la política monetaria en México siguiendo estos pasos: [2 horas, 1.5 puntos cada inciso]. Por favor documente su trabajo para que se pueda replicar.**
+  
+## **(a)**
+**Obtenga datos de las inflaciones ANUALES general y subyacente  (del Índice Nacional de Precios al Consumidor) de México, por lo menos desde 1980, datos del desempleo a nivel nacional en México, y datos de la tasa de interés a corto plazo de México, todos a frecuencia MENSUAL, y grafíquelos individualmente.**
+  
+```{r}
+dat <- read_csv("datos2.csv")
+```
+
